@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/unila-logo-trans.png" type="image/png">
+    <title>List Beasiswa</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo" style="display: flex; align-items: center;">
+            <img src="img/unila-logo-trans.png" alt="Logo Unila" style="height: 65px; margin-right: 20px;">
+            <h1>Beasiswa Kampus Unila</h1>
+        </div>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+        </nav>
+    </header>
+
+    <!-- Beasiswa List Section -->
+    <section class="beasiswa-list-section">
+        <h1>Daftar Semua Beasiswa</h1>
+
+        <!-- Filter Options -->
+        <div class="filter-section">
+            <label for="filter-kategori">Filter berdasarkan Kategori:</label>
+            <select id="filter-kategori" onchange="filterBeasiswa()">
+                <option value="">Semua Kategori</option>
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+                <option value="S3">S3</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Luar Negeri">Beasiswa Luar Negeri</option>
+            </select>
+        </div>
+
+        <!-- Beasiswa Cards -->
+        <div class="beasiswa-cards" id="beasiswa-cards">
+            <a href="detail_beasiswa.html?id=1">
+                <div class="card" data-kategori="S1">
+                    <img src="img/ybm.png" alt="Beasiswa YBM BRI">
+                    <h3>Beasiswa YBM BRI</h3>
+                    <p>Beasiswa ini untuk mahasiswa S1 dan menawarkan bantuan hingga 100%.</p>
+                </div>
+            </a>
+            <a href="detail_beasiswa.html?id=2">
+                <div class="card" data-kategori="S2">
+                    <img src="img/unggulan.png" alt="Beasiswa Unggulan">
+                    <h3>Beasiswa Unggulan S2</h3>
+                    <p>Beasiswa ini untuk mahasiswa S2 yang berprestasi.</p>
+                </div>
+            </a>
+            <a href="detail_beasiswa.html?id=3">
+                <div class="card" data-kategori="S3">
+                    <img src="img/lpdp.png" style="height: 120px;" alt="Beasiswa LPDP">
+                    <h3>Beasiswa LPDP</h3>
+                    <p>Beasiswa untuk mahasiswa S3 yang membutuhkan dukungan finansial.</p>
+                </div>
+            </a>
+            <a href="detail_beasiswa.html?id=4">
+                <div class="card" data-kategori="Diploma">
+                    <img src="img/diploma.png" style="height: 120px;" alt="Beasiswa Vokasi">
+                    <h3>Beasiswa Diploma Kemdikbud</h3>
+                    <p>Beasiswa untuk mahasiswa Diploma yang berprestasi.</p>
+                </div>
+            </a>
+            <a href="detail_beasiswa.html?id=5">
+                <div class="card" data-kategori="Luar Negeri">
+                    <img src="img/idp.png" alt="Beasiswa IDP Education">
+                    <h3>Beasiswa IDP Education</h3>
+                    <p>Beasiswa untuk mahasiswa yang ingin melanjutkan studi di luar negeri.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Kontak Kami</h3>
+                <p>Alamat: Jl. Sisingamangaraja, No. 1, Bandar Lampung, Indonesia</p>
+                <p>Email: <a href="mailto:beasiswa@unila.ac.id">beasiswa@unila.ac.id</a></p>
+                <p>Telp: +62 721 123 456</p>
+            </div>
+            <div>
+                <h3>Ikuti Kami</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/official_unila/" target="_blank"><img src="img/ig.png" alt=""
+                            style="height: 30px"></a>
+                    <a href="https://www.facebook.com/OfficialUnila" target="_blank"><img src="img/fb.png" alt=""
+                            style="height: 30px"></a>
+                    <a href="https://twitter.com/unilalampung" target="_blank"><img src="img/x.png" alt=""
+                            style="height: 30px"></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Beasiswa Kampus Universitas Lampung. Dibangun untuk mahasiswa Universitas Lampung.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
